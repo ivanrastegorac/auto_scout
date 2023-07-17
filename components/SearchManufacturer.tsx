@@ -38,7 +38,7 @@ const SearchManufacturer = ({
           <Combobox.Input
             className="search-manufacturer__input"
             displayValue={(item: string) => item}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(event) => setQuery(event.target.value)}
             placeholder="Volkswagen..."
           />
         </div>
@@ -48,7 +48,6 @@ const SearchManufacturer = ({
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
           afterLeave={() => setQuery('')}
-          show={true}
         >
           <Combobox.Options
             className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
