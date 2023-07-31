@@ -1,3 +1,5 @@
+'useClient';
+
 import { CarCard, CustomFilter, Hero, SearchBar } from '@/components';
 import { fuels, yearsOfProduction } from '@/constants';
 import { HomeProps } from '@/types';
